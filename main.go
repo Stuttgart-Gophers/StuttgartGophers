@@ -20,6 +20,7 @@ func main() {
 			"Title": "Hello, World!",
 		})
 	})
+	app.Static("/static", "./templates/static")
 
 	log.Fatal(app.Listen(":3000"))
 }
