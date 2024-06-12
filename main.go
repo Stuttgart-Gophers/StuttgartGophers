@@ -45,5 +45,10 @@ func main() {
 
 	app.Static("/static", "./templates/static")
 
+	// Catch-all route
+	app.Get("*", func(c *fiber.Ctx) error {
+		return c.Redirect("/")
+	})
+
 	log.Fatal(app.Listen(":3000"))
 }
