@@ -14,12 +14,21 @@ func main() {
 	app := fiber.New(fiber.Config{
 		Views: engine,
 	})
+
 	app.Get("/", func(c *fiber.Ctx) error {
 		// Render the templates
 		return c.Render("home", fiber.Map{
-			"Title": "Hello, World!",
+			"Title": "Stuttgart Gophers",
 		})
 	})
+
+	app.Get("/upcoming", func(c *fiber.Ctx) error {
+		// Render the upcoming events page
+		return c.Render("upcoming", fiber.Map{
+			"Title": "Upcoming Events",
+		})
+	})
+
 	app.Static("/static", "./templates/static")
 
 	log.Fatal(app.Listen(":3000"))
