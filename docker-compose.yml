@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  stuttgart-gophers:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    # TODO: Remove before deployment
+    ports:
+      - 3000:3000
