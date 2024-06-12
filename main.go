@@ -29,7 +29,26 @@ func main() {
 		})
 	})
 
+	app.Get("/past", func(c *fiber.Ctx) error {
+		// Render the past events page
+		return c.Render("past", fiber.Map{
+			"Title": "Past Events",
+		})
+	})
+
+	app.Get("/contact", func(c *fiber.Ctx) error {
+		// Render the contact us page
+		return c.Render("contact", fiber.Map{
+			"Title": "Contact Us",
+		})
+	})
+
 	app.Static("/static", "./templates/static")
+
+	// Catch-all route
+	app.Get("*", func(c *fiber.Ctx) error {
+		return c.Redirect("/")
+	})
 
 	log.Fatal(app.Listen(":3000"))
 }
