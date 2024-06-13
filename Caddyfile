@@ -1,4 +1,3 @@
 stuttgart-gophers.de
 
-reverse_proxy server:3000
-
+reverse_proxy stuttgart-gophers:3000
