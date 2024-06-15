@@ -1,0 +1,18 @@
+{
+  "name": "stuttgartgophers",
+  "version": "1.0.0",
+  "description": "This is the source code for the Stuttgart Gophers home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build ./templates/static/css/tailwind.css -o ./templates/static/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4"
+  }
+}

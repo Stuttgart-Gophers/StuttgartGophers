@@ -7,6 +7,8 @@ import (
 	"github.com/gofiber/template/html/v2"
 )
 
+//go:generate npm run build:css
+
 func main() {
 
 	engine := html.New("./templates", ".gohtml")

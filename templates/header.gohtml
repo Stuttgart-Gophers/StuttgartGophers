@@ -1,5 +1,52 @@
-<header style="background-color: black; height: 10vh; margin-top: 5vh; display: flex; align-items: center; justify-content: center; width: 100%; z-index: 2; position: relative;">
-    <img src="/static/stuttgart_gophers.svg" alt="Gopher" style="margin-right: 3vw; width: 8vw; height: auto;">
-    <h1 style="color: #58caea; font-size: 3vw; text-align: center;">Welcome to the Stuttgart Gophers Homepage</h1>
-    <img src="/static/stuttgart_gophers.svg" alt="Gopher" style="margin-left: 3vw; width: 8vw; height: auto;">
+<style>
+    .header {
+        background-color: black; 
+        height: 10vh;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%; 
+        padding-top: 32px;
+    }
+
+    .gophers {
+        width: 8vw; 
+        height: auto; 
+        padding-top: 3vw;
+        margin: 30px 30px;
+    }
+
+    .welcome {
+        color: #58caea; 
+        font-size: 3vw; 
+        text-align: center;
+    }
+
+    @media (max-width: 800px) {
+        .header {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: none;
+            flex-wrap: nowrap;
+            height: auto
+}
+        .welcome {
+            font-size: 3vh;
+            padding-top: 20px;
+        }
+        .gophers {
+            width: 40vw;
+        }    
+        .gotemp {
+            display: none;
+        }
+    }
+</style>
+
+<header class="header">
+    <img class="gophers gotemp" src="/static/stuttgart_gophers.svg" alt="Gopher">
+    <h1 class="welcome">Welcome to the Stuttgart Gophers Homepage</h1>
+    <img class="gophers" src="/static/stuttgart_gophers.svg" alt="Gopher">
 </header>
+
+
