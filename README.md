@@ -76,3 +76,9 @@ echo "Ref $ref successfully received, but only the main branch will be deployed.
 fi
 done
 ```
+
+### logging with highlight.io
+Documentation
+```
+https://www.highlight.io/docs/general/welcome
+```
