@@ -5,41 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stuttgart Gophers</title>
     <style>
-    body {
-        background-color: #58caea;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            background-color: #58caea;
+            margin: 0;
+            padding: 0;
+        }
 
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
 
-    .main-content {
-        margin-left: 15vw;
-        margin-top: 5vh;
-    }
-  
+        .main-content {
+            margin: 15vw;
+        }
+        @media (max-width: 800px) {
+        .main-content {
+            padding-bottom: 5vh;
+            }
+        }
     </style>
 </head>
-<body>
+<body> 
+    {{template "header" .}}
     {{template "menu" .}}
     <div class="main-content">
         <main>
             <h2>About Us</h2>
             <p>Official page of the <a href="https://www.meetup.com/stuttgart-gophers/">Stuttgart Gophers Meetup.</a> We meet regularly to discuss and learn about Golang. We also organize workshops and talks on Golang. If you are interested in Golang, you are welcome to join us.</p>
         </main>
-
-        <footer>
+    </div>
         <!--
+        <footer>
             <div class="footer">
                 <p>&copy; 2024 Stuttgart Gophers</p>
             </div>
-        -->
         </footer>
-    </div>
+        -->
+    {{template "footer" .}}
 </body>
 </html>
