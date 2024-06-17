@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuttgart Gophers</title>
+    <style>
+        body {
+            background-color: #58caea;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .main-content {
+            margin: 15vw;
+        }
+        @media (max-width: 800px) {
+        .main-content {
+            padding-bottom: 5vh;
+            }
+        }
+    </style>
+</head>
+{{template "header" .}}
+{{template "menu" .}}
+<div class="py-12 flex justify-center">
+    <div class="px-8 py-8 bg-white rounded shadow">
+        <!--<h1>Sign up</h1>-->
+        <form action="/users" method="post">
+            <div>
+                <label>Email Address</label>
+                <input name="email" id="email" type="email" placeholder="Email Address" required autocomplete="email" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input name="password" id="password" type="password" placeholder="Password" required />
+            </div>
+            <div>
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+    </div>
+</div>
+ {{template "footer" .}}
