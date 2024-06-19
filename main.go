@@ -19,7 +19,7 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		// Render the templates
-		return c.Render("home", fiber.Map{
+		return c.Render("home4", fiber.Map{
 			"Title": "Stuttgart Gophers",
 		})
 	})
@@ -52,5 +52,5 @@ func main() {
 		return c.Redirect("/")
 	})
 
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(":3001"))
 }
