@@ -1,88 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rita Codes</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  <style>
-    .background-gradient {
-      background: linear-gradient(180deg, #6A287E 0%, #391340 100%);
-    }
-    .rounded-switch {
-      width: 40px;
-      height: 20px;
-      background-color: #D1D5DB;
-      border-radius: 9999px;
-      position: relative;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .rounded-switch::before {
-      content: '';
-      width: 18px;
-      height: 18px;
-      background-color: #FFF;
-      border-radius: 50%;
-      position: absolute;
-      top: 1px;
-      left: 1px;
-      transition: left 0.3s;
-    }
-    .rounded-switch.active {
-      background-color: #6A287E;
-    }
-    .rounded-switch.active::before {
-      left: 21px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Friendly Layout</title>
+    <link rel="stylesheet" href="static/css/main.css"> 
 </head>
-<body class="background-gradient text-white font-sans">
-  <header class="container mx-auto p-6 flex justify-between items-center">
-    <div class="text-2xl font-bold">/rita.codes</div>
-    <div class="flex items-center space-x-4">
-      <span>contact</span>
-      <div class="rounded-switch"></div>
-    </div>
-  </header>
-  <main class="container mx-auto px-6">
-    <section class="flex flex-col md:flex-row items-center md:items-start my-12 md:my-24">
-      <img src="https://via.placeholder.com/300" alt="Avatar" class="w-60 h-60 md:w-80 md:h-80 mx-auto md:mx-0">
-      <div class="md:ml-12 mt-6 md:mt-0">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Hi there! My name is Rita.</h1>
-        <p class="text-lg md:text-xl">I’m a software developer passionate about learning new skills, Japanese culture, mechanical keyboards, music, and puppies in general.</p>
-      </div>
-    </section>
-    <section class="my-12 md:my-24">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">/ about me</h2>
-      <p class="text-md md:text-lg leading-relaxed">
-        I'm a web developer and an actress, passionate about learning new skills and creating software to make the world a better place. I am a curious person and a fast learner; hard work doesn't scare me. My goal is to create things that make a difference.
-        <br><br>
-        After 3 wonderful years working at Z1 now I'm a Software Engineer at Tepi. Lately, I've been creating projects using React for the frontend and Go for the backend. I'm always looking for new possibilities to improve, and I must acknowledge that it's likely I'm addicted to learning new things. I'm working on that (😅).
-        <br><br>
-        Besides working, I have a life and responsibilities too. In fact, one main and furry responsibility called Tofu, a small brown chihuahua who is always in danger because he's small in real life but huge in his mind.
-        <br><br>
-        I'm also a music enthusiast and once a professional musician. I play violin and piano and love listening to indie-rock music. Sometimes I binge on series, anime, and videogames! Japanese culture is another of my passions.
-        <br><br>
-        On top of that, I like making funny videos about working as a software engineer to share the ups and downs with other devs.
-        <br><br>
-        So, long story short, I'm a very enthusiastic person always followed by the cutest dog in the world.
-      </p>
-    </section>
-  </main>
-  <footer class="container mx-auto p-6 text-center text-gray-400">
-    <p>© 2023 rita.codes</p>
-    <div class="flex justify-center space-x-4 mt-4">
-      <a href="#" class="text-gray-400 hover:text-gray-200">Twitter</a>
-      <a href="#" class="text-gray-400 hover:text-gray-200">GitHub</a>
-      <a href="#" class="text-gray-400 hover:text-gray-200">LinkedIn</a>
-      <a href="#" class="text-gray-400 hover:text-gray-200">Instagram</a>
-    </div>
-  </footer>
-  <script>
-    document.querySelector('.rounded-switch').addEventListener('click', function() {
-      this.classList.toggle('active');
-    });
-  </script>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold">My Website</h1>
+                <nav class="space-x-4">
+                    <a href="#" class="hover:text-gray-300">Home</a>
+                    <a href="#" class="hover:text-gray-300">About</a>
+                    <a href="#" class="hover:text-gray-300">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to My Website</h2>
+            <p class="mb-4">This is a simple example of a mobile-friendly layout using Tailwind CSS.</p>
+            <p class="mb-4">The header at the top is sticky, meaning it will stay at the top of the screen as you scroll down.</p>
+            <p class="mb-4">You can add more content here to see how the layout works.</p>
+        </section>
+
+        <!-- Add more sections or content as needed -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Another Section</h2>
+            <p class="mb-4">This is another section to demonstrate the sticky header.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

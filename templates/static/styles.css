@@ -1,4 +1,4 @@
-body {
+/* .div2 {
   margin: 0;
   overflow: hidden;
   display: flex;
@@ -6,16 +6,16 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #87CEEB; /* Sky blue background */
+  background-color: #87CEEB;
   overflow: hidden;
-
-}
+  z-index: 2;
+} */
 
 .center-gopher {
   position: relative;
   width: 20vw; /* Use vw and vh units for responsiveness */
   height: 20vw;
-  background: url('gopher.png') no-repeat center center;
+  background: url('gopher-badge.png') no-repeat center center;
   background-size: contain;
 }
 
@@ -55,6 +55,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   display: none;
+  border: 2px solid red;
 }
 
 .hidden {

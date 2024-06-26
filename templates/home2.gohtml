@@ -3,52 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minimal Website</title>
-  <link href="static/css/main.css" rel="stylesheet">
+  <title>Mobile-Friendly Layout with Sticky Header</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="static/css/main.css"> 
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <header class="container mx-auto py-8">
-    <h1 class="text-4xl font-bold text-center mb-4">Minimal Website</h1>
-    <nav class="text-center">
-      <a href="#about" class="mx-2 text-gray-600 hover:text-gray-900">About</a>
-      <a href="#projects" class="mx-2 text-gray-600 hover:text-gray-900">Projects</a>
-      <a href="#contact" class="mx-2 text-gray-600 hover:text-gray-900">Contact</a>
-    </nav>
+<body class="bg-gray-100 max-w-7xl mx-auto p-4">
+  <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+    <h2 class="text-2xl font-semibold mb-4">Section 1</h2>
+    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+  </section>
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-xl font-bold text-gray-900">Sticky Header</h1>
+    </div>
   </header>
-  <main class="container mx-auto py-8">
-    <section id="about" class="mb-16">
-      <h2 class="text-3xl font-semibold mb-4">About</h2>
-      <p class="leading-relaxed text-gray-700">This is a simple, clean, and minimal website design using Tailwind CSS.</p>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto p-4">
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Section 1</h2>
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
     </section>
-    <section id="projects" class="mb-16">
-      <h2 class="text-3xl font-semibold mb-4">Projects</h2>
-      <ul class="space-y-4">
-        <li class="p-6 bg-white shadow-md rounded-lg">Project 1</li>
-        <li class="p-6 bg-white shadow-md rounded-lg">Project 2</li>
-        <li class="p-6 bg-white shadow-md rounded-lg">Project 3</li>
-      </ul>
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Section 2</h2>
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
     </section>
-    <section id="contact" class="mb-16">
-      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
-      <form class="space-y-4">
-        <div>
-          <label for="name" class="block text-gray-700">Name</label>
-          <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300">
-        </div>
-        <div>
-          <label for="email" class="block text-gray-700">Email</label>
-          <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300">
-        </div>
-        <div>
-          <label for="message" class="block text-gray-700">Message</label>
-          <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"></textarea>
-        </div>
-        <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Send</button>
-      </form>
+    <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-2xl font-semibold mb-4">Section 3</h2>
+      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
     </section>
   </main>
-  <footer class="container mx-auto py-8 text-center text-gray-600">
-    <p>© 2024 Minimal Website</p>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center">&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

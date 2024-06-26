@@ -19,7 +19,7 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		// Render the templates
-		return c.Render("home4", fiber.Map{
+		return c.Render("home3", fiber.Map{
 			"Title": "Stuttgart Gophers",
 		})
 	})
