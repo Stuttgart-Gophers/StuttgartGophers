@@ -1,0 +1,43 @@
+<header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-0 z-51">
+        <div class="flex justify-between items-center py-6">
+            <div class="flex-shrink-0">
+                <h1 class="text-xl font-bold">My Sticky Header</h1>
+            </div>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#" onclick="window.location.href='/contact'" class="text-gray-700 hover:text-gray-900">Contact</a>
+                <a href="#" onclick="window.location.href='/past'" class="text-gray-700 hover:text-gray-900">Past Events</a>
+                <a href="#" onclick="window.location.href='/upcoming'" class="text-gray-700 hover:text-gray-900">Upcoming Events</a>
+                <a href="#" onclick="window.location.href='/'" class="text-gray-700 hover:text-gray-900">About Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="burger-menu" class="text-gopher focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#" onclick="window.location.href='/contact'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Us</a>
+        <a href="#" onclick="window.location.href='/past'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Past Events</a>
+        <a href="#" onclick="window.location.href='/upcoming'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Upcoming Events</a>
+        <a href="#" onclick="window.location.href='/'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+    </div>
+    <div class="pt-7">
+      <h2 class="text-2xl font-semibold mb-4 text-center text-gopher">
+          Welcome to the Stuttgart Gophers Homepage
+      </h2>
+    </div>
+    <div class="sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="/">
+                <img class="h-44 w-44" src="static/stuttgart_gophers.svg" alt="Logo Stuttgart Gophers">
+            </a>
+        </div>
+    </div>
+</header>
+
+
+

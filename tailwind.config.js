@@ -3,7 +3,10 @@ module.exports = {
     "./templates/**/*.{gohtml,js}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gopher: '#58caea',  
+    }},
   },
   plugins: [],
 }

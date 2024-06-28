@@ -1,46 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stuttgart Gophers</title>
-    <style>
-    body {
-        background-color: #58caea;
-        margin: 0;
-        padding: 0;
-    }
-
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .main-content {
-        margin: 15vw;
-    }
-    @media (max-width: 800px) {
-    .main-content {
-        padding-bottom: 5vh;
-        }
-    }
-  
-    </style>
-</head>
-<body>
-    {{template "header" .}}
-    {{template "menu" .}}
-    <div class="main-content">
-        <main>
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li><a href="https://www.meetup.com/stuttgart-gophers/events/301555477/" target="_blank">Pointers and Interfaces in Go - 20th of June 2024</a></li>
-        </ul>
-        </main>
-        
-    </div>
-    {{template "footer" .}}
-</body>
-</html>
+{{template "partials/header" .}}
+<main>
+    <h2>Upcoming Events</h2>
+    <ul>
+        <li><a href="https://www.meetup.com/stuttgart-gophers/events/301555477/" target="_blank">Pointers and Interfaces in Go - 20th of June 2024</a></li>
+    </ul>
+</main>
+{{template "partials/footer" .}}

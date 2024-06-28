@@ -19,30 +19,30 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		// Render the templates
-		return c.Render("home3", fiber.Map{
+		return c.Render("home", fiber.Map{
 			"Title": "Stuttgart Gophers",
-		})
+		}, "layouts/main")
 	})
 
 	app.Get("/upcoming", func(c *fiber.Ctx) error {
 		// Render the upcoming events page
 		return c.Render("upcoming", fiber.Map{
 			"Title": "Upcoming Events",
-		})
+		}, "layouts/main")
 	})
 
 	app.Get("/past", func(c *fiber.Ctx) error {
 		// Render the past events page
 		return c.Render("past", fiber.Map{
 			"Title": "Past Events",
-		})
+		}, "layouts/main")
 	})
 
 	app.Get("/contact", func(c *fiber.Ctx) error {
 		// Render the contact us page
 		return c.Render("contact", fiber.Map{
 			"Title": "Contact Us",
-		})
+		}, "layouts/main")
 	})
 
 	app.Static("/static", "./templates/static")
@@ -52,5 +52,5 @@ func main() {
 		return c.Redirect("/")
 	})
 
-	log.Fatal(app.Listen(":3001"))
+	log.Fatal(app.Listen(":3000"))
 }
