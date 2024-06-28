@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gopher: '#58caea',  
+        gopher: '#58caea',
+        nav: '#EA7858'
     }},
   },
   plugins: [],
