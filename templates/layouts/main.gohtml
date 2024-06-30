@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="static/css/main.css" />
+    <style>
+      input:checked~.dot {
+          transform: translateX(100%);
+          /* background-color: #132b50; */
+      }
+    </style>
   </head>
   <body class="bg-black max-w-7xl mx-auto">
     {{ embed }}

@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         gopher: '#58caea',
-        nav: '#EA7858'
+        head: '#BFE3E2'
     }},
   },
   plugins: [
