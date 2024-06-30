@@ -1,36 +1,124 @@
 <header>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 static">
-        <div class="flex justify-between items-center">
-            <div class="flex-shrink-0">
-                <h1 class="text-xl font-bold"></h1>
-            </div>
-            <nav class="hidden md:flex space-x-4">
-                <a href="#" onclick="window.location.href='/contact'" class="text-gray-700 hover:text-gray-900">Contact</a>
-                <a href="#" onclick="window.location.href='/past'" class="text-gray-700 hover:text-gray-900">Past Events</a>
-                <a href="#" onclick="window.location.href='/upcoming'" class="text-gray-700 hover:text-gray-900">Upcoming Events</a>
-                <a href="#" onclick="window.location.href='/'" class="text-gray-700 hover:text-gray-900">About Us</a>
-            </nav>
-            <div class="md:hidden">
-                <button id="burger-menu" class="text-gopher focus:outline-none">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-nav rounded-lg text-end">
-            <a href="#" onclick="window.location.href='/contact'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact Us</a>
-            <a href="#" onclick="window.location.href='/past'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Past Events</a>
-            <a href="#" onclick="window.location.href='/upcoming'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Upcoming Events</a>
-            <a href="#" onclick="window.location.href='/'" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
-        </div>
-        <div class="pt-7">
-            <h2 class="text-2xl font-semibold mb-4 text-center text-gopher">
-                Welcome to the Stuttgart Gophers Homepage
-            </h2>
-        </div>
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-end items-center pt-4 pb-4">
+      <div class="hidden md:flex space-x-4">
+        <a
+          onclick="window.location.href='/past'"
+          class="text-gray-700 hover:text-gray-900"
+          >Past Events</a
+        >
+        <a
+          onclick="window.location.href='/upcoming'"
+          class="text-gray-700 hover:text-gray-900"
+          >Upcoming Events</a
+        >
+        <a
+          onclick="window.location.href='/contact'"
+          class="text-gray-700 hover:text-gray-900"
+          >Contact</a
+        >
+        <a
+          onclick="window.location.href='/'"
+          class="text-gray-700 hover:text-gray-900"
+          >About Us</a
+        >
+      </div>
+      <div class="md:hidden">
+        <button id="burger-menu" class="text-orange-500 focus:outline-none">
+          <svg
+            class="h-8 w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden rounded-lg text-end z-50 fixed top-0 py-10 left-0 w-screen h-screen backdrop-blur-md overscroll-none"
+    >
+      <a
+        onclick="window.location.href='/'"
+        class="px-4 py-2 text-orange-500 hover:text-gopher mb-5 flex justify-end"
+        ><svg
+          class="h-8 w-8"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          /></svg
+      ></a>
+      <a
+        onclick="window.location.href='/contact'"
+        class="block px-4 py-2 text-white hover:text-gopher"
+        >Contact Us</a
+      >
+      <a
+        onclick="window.location.href='/past'"
+        class="block px-4 py-2 text-white hover:text-gopher"
+        >Past Events</a
+      >
+      <a
+        onclick="window.location.href='/upcoming'"
+        class="block px-4 py-2 text-white hover:text-gopher"
+        >Upcoming Events</a
+      >
+      <a
+        onclick="window.location.href='/'"
+        class="block px-4 py-2 text-white hover:text-gopher mb-5"
+        >About Us</a
+      >
+      <hr />
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-8 justify-center relative items-start h-full w-full p-10"
+      >
+        <a href="https://www.meetup.com/stuttgart-gophers/" target="_blank"
+          ><img src="/static/meetup-svgrepo-com.svg" alt="Meetup" class="h-8"
+        /></a>
+        <a href="https://github.com/Stuttgart-Gophers" target="_blank"
+          ><img src="/static/github-svgrepo-com.svg" alt="GitHub" class="h-8"
+        /></a>
+        <a href="https://x.com/Stgt_Gophers" target="_blank"
+          ><img
+            src="/static/twitter-x-seeklogo-3.svg"
+            alt="Twitter"
+            class="h-8"
+        /></a>
+        <a href="https://hachyderm.io/@StuttgartGophers" target="_blank"
+          ><img
+            src="/static/mastodon-svgrepo-com.svg"
+            alt="Mastodon"
+            class="h-8"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UClPhVOXrT3wBLulrjZp8JSg"
+          target="_blank"
+          ><img src="/static/youtube-svgrepo-com.svg" alt="YouTube" class="h-8"
+        /></a>
+      </div>
+    </div>
+  </nav>
+  <div class="pt-7">
+    <h2
+      class="text-3xl text-cyan-500 font-semibold mb-4 text-center xl:text-4xl"
+    >
+      Welcome to the Stuttgart Gophers Homepage
+    </h2>
+  </div>
 </header>
-
-
-
