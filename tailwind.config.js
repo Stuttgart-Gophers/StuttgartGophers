@@ -12,6 +12,7 @@ module.exports = {
         head: '#BFE3E2'
     }},
   },
+  darkMode: 'class',
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('tailwindcss'),

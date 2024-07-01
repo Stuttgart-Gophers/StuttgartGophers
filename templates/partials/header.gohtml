@@ -1,7 +1,7 @@
 <header>
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center pt-4 pb-4">
-      <div class="dark:bg-gray-900 flex flex-row items-center">
+      <div class="flex flex-row items-center">
         <div class="flex flex-row justify-between toggle">
           <label for="dark-toggle" class="flex items-center cursor-pointer">
             <div class="relative">
@@ -18,9 +18,7 @@
                 class="dot absolute left-1 top-1 dark:bg-white bg-gray-700 w-6 h-6 rounded-full transition"
               ></div>
             </div>
-            <div class="ml-3 dark:text-white text-gray-800 font-medium">
-              White
-            </div>
+            <div id="toggle" class="ml-3 dark:text-slate-50 text-gray-800 font-medium"></div>
           </label>
         </div>
       </div>
@@ -89,25 +87,25 @@
       ></a>
       <a
         onclick="window.location.href='/contact'"
-        class="block px-4 py-2 text-white hover:text-gopher"
+        class="block px-4 py-2 dark:text-white dark:hover:text-gopher text-black hover:text-white"
         >Contact Us</a
       >
       <a
         onclick="window.location.href='/past'"
-        class="block px-4 py-2 text-white hover:text-gopher"
+        class="block px-4 py-2 dark:text-white dark:hover:text-gopher text-black hover:text-white"
         >Past Events</a
       >
       <a
         onclick="window.location.href='/upcoming'"
-        class="block px-4 py-2 text-white hover:text-gopher"
+        class="block px-4 py-2 dark:text-white dark:hover:text-gopher text-black hover:text-white"
         >Upcoming Events</a
       >
       <a
         onclick="window.location.href='/'"
-        class="block px-4 py-2 text-white hover:text-gopher mb-5"
+        class="block px-4 py-2 dark:text-white dark:hover:text-gopher text-black hover:text-white mb-5"
         >About Us</a
       >
-      <hr />
+      <hr class="h-px my-8 bg-black border-0 dark:bg-white">
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-8 justify-center relative items-start h-full w-full p-10"
       >
@@ -139,7 +137,7 @@
   </nav>
   <div class="pt-7">
     <h2
-      class="text-3xl text-head font-semibold mb-4 text-center xl:text-4xl"
+      class="text-3xl dark:text-head text-slate-800 font-semibold mb-4 text-center xl:text-4xl"
     >
       Welcome to the Stuttgart Gophers Homepage
     </h2>
