@@ -18,30 +18,33 @@
                 class="dot absolute left-1 top-1 dark:bg-white bg-gray-700 w-6 h-6 rounded-full transition"
               ></div>
             </div>
-            <div id="toggle" class="ml-3 dark:text-slate-50 text-gray-800 font-medium"></div>
+            <div
+              id="toggle"
+              class="ml-3 dark:text-slate-50 text-gray-800 font-medium"
+            ></div>
           </label>
         </div>
       </div>
-      <div class="hidden md:flex space-x-4">
+      <div class="hidden md:flex space-x-4 cursor-pointer">
         <a
-          onclick="window.location.href='/past'"
-          class="text-gray-700 hover:text-gray-900"
-          >Past Events</a
+          onclick="window.location.href='/'"
+          class="dark:text-slate-300 dark:hover:text-orange-400 hover:text-cyan-600"
+          >About Us</a
         >
         <a
           onclick="window.location.href='/upcoming'"
-          class="text-gray-700 hover:text-gray-900"
+          class="dark:text-slate-300 dark:hover:text-orange-400 hover:text-cyan-600"
           >Upcoming Events</a
         >
         <a
-          onclick="window.location.href='/contact'"
-          class="text-gray-700 hover:text-gray-900"
-          >Contact</a
+          onclick="window.location.href='/past'"
+          class="dark:text-slate-300 dark:hover:text-orange-400 hover:text-cyan-600"
+          >Past Events</a
         >
         <a
-          onclick="window.location.href='/'"
-          class="text-gray-700 hover:text-gray-900"
-          >About Us</a
+          onclick="window.location.href='/contact'"
+          class="dark:text-slate-300 dark:hover:text-orange-400 hover:text-cyan-600"
+          >Contact Us</a
         >
       </div>
       <div class="md:hidden">
@@ -105,7 +108,7 @@
         class="block px-4 py-2 dark:text-white dark:hover:text-gopher text-black hover:text-white mb-5"
         >About Us</a
       >
-      <hr class="h-px my-8 bg-black border-0 dark:bg-white">
+      <hr class="h-px my-8 bg-black border-0 dark:bg-white" />
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-8 justify-center relative items-start h-full w-full p-10"
       >
@@ -135,11 +138,37 @@
       </div>
     </div>
   </nav>
-  <div class="pt-7">
-    <h2
-      class="text-3xl dark:text-head text-slate-800 font-semibold mb-4 text-center xl:text-4xl"
-    >
-      Welcome to the Stuttgart Gophers Homepage
-    </h2>
+  <div
+    class="block sm:flex justify-evenly items-center mx-auto max-w-screen-2xl"
+  >
+    <div class="bg-transparent hidden xl:block">
+      <div class="mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-center">
+        <a href="/">
+          <img
+            class="h-44 w-44"
+            src="static/stuttgart_gophers.svg"
+            alt="Logo Stuttgart Gophers"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="pt-7">
+      <h2
+        class="text-3xl dark:text-cyan-200 text-slate-800 font-semibold mb-4 text-center xl:text-5xl"
+      >
+        Welcome to the Stuttgart Gophers Homepage
+      </h2>
+    </div>
+    <div class="bg-transparent hidden xl:block">
+      <div class="mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-center">
+        <a href="/">
+          <img
+            class="h-44 w-44"
+            src="static/stuttgart_gophers.svg"
+            alt="Logo Stuttgart Gophers"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 </header>
