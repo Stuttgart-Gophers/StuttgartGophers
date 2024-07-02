@@ -776,6 +776,9 @@ video {
 .pl-2 {
   padding-left: 0.5rem;
 }
+.pl-4 {
+  padding-left: 1rem;
+}
 .pl-9 {
   padding-left: 2.25rem;
 }
@@ -953,6 +956,10 @@ video {
 
   .xl\:min-h-96 {
     min-height: 24rem;
+  }
+
+  .xl\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .xl\:text-5xl {
