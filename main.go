@@ -45,6 +45,13 @@ func main() {
 		}, "layouts/main")
 	})
 
+	// app.Get("/signup", func(c *fiber.Ctx) error {
+	// 	// Render the signup page
+	// 	return c.Render("signup", fiber.Map{
+	// 		"Title": "Sign Up",
+	// 	})
+	// })
+
 	app.Static("/static", "./templates/static")
 
 	// Catch-all route
