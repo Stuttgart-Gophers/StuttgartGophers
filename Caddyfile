@@ -1,3 +1,7 @@
 stuttgart-gophers.de
 
 reverse_proxy stuttgart-gophers:3000
+
+alextldr.com
+
+reverse_proxy AlexTLDR-dot-com:4000
