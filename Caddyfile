@@ -3,5 +3,5 @@ stuttgart-gophers.de {
 }
 
 alextldr.com {
-    reverse_proxy AlexTLDR-dot-com:4000
+    reverse_proxy alextldr-dot-com:4000
 }
