@@ -16,15 +16,8 @@ services:
       dockerfile: Dockerfile
     restart: always
     logging: *highlight-logging
+    ports:
+    - "5000:5000"
  
 
-  caddy:
-    image: caddy
-    restart: always
-    ports:
-      - 80:80
-      - 443:443
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
-    logging: *highlight-logging
     
