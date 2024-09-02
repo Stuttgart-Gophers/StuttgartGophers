@@ -1,21 +1,25 @@
 {{template "partials/header" .}}
+
 {{template "partials/logo" .}}
+
 <main class="p-4 m-10 flex-grow mx-auto max-w-7xl w-screen">
   <section class="bg-gopher p-6 rounded-lg shadow-md xl:min-h-96">
-    <h2 class="text-2xl font-semibold mb-4">About Us</h2>
-    <p>
-      Official page of the
-      <a
-        href="https://www.meetup.com/stuttgart-gophers/"
-        target="_blank"
-        class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-      >
-        Stuttgart Gophers Meetup sponsors</a
-      >.
-      We meet regularly to discuss and learn about Golang. <br /><br />
-      We also organize workshops and talks on Golang. If you are interested in
-      Golang, you are welcome to join us.
-    </p>
+    <h2 class="text-2xl font-semibold mb-4">Our Sponsors</h2>
+    <ul class="sponsor-list">
+      <br><br><li class="sponsor-item mb-8">
+        <div class="md:flex md:items-center">
+          <a href="https://thoughtworks.com/" target="_blank" rel="noopener noreferrer" class="block mb-4 md:mb-0 md:mr-6">
+            <img src="/static/thoughtworks_logo.jpeg" alt="ThoughtWorks logo" class="w-40 h-auto mx-auto">
+          </a>
+          <p class="text-lg text-center md:text-left">
+            <a href="https://thoughtworks.com/" target="_blank"
+            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+            >Thoughtworks</a> is a pioneering global technology consultancy, leading the charge in custom software development and technology innovation. We empower ambitious businesses to thrive in a constantly evolving world. We integrate the best of strategy, design, and software engineering to provide our clients with the foundations they need to excel.
+          </p>
+        </div>
+      </li>
+    </ul>
   </section>
 </main>
+
 {{template "partials/footer" .}}
