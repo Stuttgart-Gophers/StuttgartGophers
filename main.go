@@ -45,6 +45,13 @@ func main() {
 		}, "layouts/main")
 	})
 
+	app.Get("/sponsors", func(c *fiber.Ctx) error {
+		// Render the sponsors page
+		return c.Render("sponsors", fiber.Map{
+			"Title": "Our Sponsors",
+		}, "layouts/main")
+	})
+
 	// app.Get("/signup", func(c *fiber.Ctx) error {
 	// 	// Render the signup page
 	// 	return c.Render("signup", fiber.Map{
