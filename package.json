@@ -20,6 +20,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "cssnano": "^7.0.3"
+    "cssnano": "^7.0.3",
+    "nodemon": "^3.1.4"
   }
 }
