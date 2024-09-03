@@ -1,6 +1,6 @@
-{{template "partials/header" .}}
+{{template "header" .}}
 
-{{template "partials/logo" .}}
+{{template "logo" .}}
 
 <main class="p-4 m-10 flex-grow mx-auto max-w-7xl w-screen">
   <section class="bg-gopher p-6 rounded-lg shadow-md xl:min-h-96">
@@ -10,9 +10,9 @@
       <li class="sponsor-item mb-8">
         <div class="md:flex md:items-center">
           <a href="https://thoughtworks.com/" target="_blank" rel="noopener noreferrer" class="block mb-6 md:mb-0 md:mr-6">
-            <img src="/static/thoughtworks_logo.jpeg" alt="ThoughtWorks logo" class="w-40 h-auto mx-auto">
+            <img src="/static/thoughtworks_logo.jpeg" alt="ThoughtWorks logo" class="w-40 min-w-24 h-auto mx-auto">
           </a>
-          <p class="text-lg text-center md:text-left">
+          <p class="text-lg text-left md:text-left">
             <a href="https://thoughtworks.com/" target="_blank"
                class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
             >Thoughtworks</a> is a pioneering global technology consultancy, leading the charge in custom software development and technology innovation. We empower ambitious businesses to thrive in a constantly evolving world. We integrate the best of strategy, design, and software engineering to provide our clients with the foundations they need to excel.
@@ -23,4 +23,4 @@
   </section>
 </main>
 
-{{template "partials/footer" .}}
+{{template "footer" .}}
