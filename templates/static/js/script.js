@@ -35,3 +35,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.querySelector('#dark-toggle').addEventListener('click', toggleDarkMode);
+
+
+const fadeElement = document.querySelector('.fade-element');
+const fadeInPosition = 300; // Adjust this value to the scroll position where the fade-in should occur
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop >= fadeInPosition) {
+        // Fade in when scroll reaches the specified position
+        fadeElement.classList.remove('opacity-100');
+        fadeElement.classList.add('opacity-0');
+    } else {
+        // Fade out when scrolling back up
+        fadeElement.classList.remove('opacity-0');
+        fadeElement.classList.add('opacity-100');
+    }
+});
+
+
