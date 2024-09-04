@@ -1,7 +1,5 @@
 {{template "header" .}}
-
 {{template "logo" .}}
-
 <main class="p-4 m-10 flex-grow mx-auto max-w-7xl w-screen">
   <section class="bg-gopher p-6 rounded-lg shadow-md xl:min-h-96">
     <h2 class="text-2xl font-semibold mb-4">Our Sponsors</h2>
@@ -20,7 +18,21 @@
         </div>
       </li>
     </ul>
+    <ul class="sponsor-list">
+      <br><br>
+      <li class="sponsor-item mb-8">
+        <div class="md:flex md:items-center">
+          <a href="https://www.ardanlabs.com/" target="_blank" rel="noopener noreferrer" class="block mb-6 md:mb-0 md:mr-6">
+            <img src="/static/ardanlabs_logo.jpeg" alt="ThoughtWorks logo" class="w-40 min-w-24 h-auto mx-auto">
+          </a>
+          <p class="text-lg text-left md:text-left">
+            <a href="https://www.ardanlabs.com/" target="_blank"
+               class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+            >Ardan Labs</a> with over 60 years of combined experience in highly scalable and secure distributed systems, our high-performance software engineering teams can help your company solve a wide variety of technical and engineering problems that include filling skill gaps, up-skilling, engineer highly scalable business software solutions and applications (apps), tech stack performance optimization, architecture optimization and overhauls, technology migration (Python to Go, Java to Go, etc…) code refactoring, technical team scaling and lots more.
+          </p>
+        </div>
+      </li>
+    </ul>
   </section>
 </main>
-
 {{template "footer" .}}
