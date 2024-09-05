@@ -2,82 +2,91 @@
 {{template "logo" .}}
 <main class="p-4 m-10 flex-grow mx-auto max-w-7xl w-screen">
   <section class="bg-gopher p-6 rounded-lg shadow-md mb-6 xl:min-h-96">
-    <div class="w-full gap-x-2 justify-items-center grid-cols-2 sm:grid flex flex-col gap-y-6">
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Alex</h2>
-        <!-- <h3>Transforming operations and development processes to enhance efficiency and scalability 🚀 DevOps Engineer @ Sopheon</h3> -->
-        <p>
-          Reach out on
-          <a
-            href="https://www.linkedin.com/in/alexandru-badragan/"
-            target="_blank"
-            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-            >LinkedIn</a
-          >.
-        </p>
-        <p>
-          Reach out on
-          <a
-            href="https://gophers.slack.com/team/U033JRER9B7"
-            target="_blank"
-            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-            >slack</a
-          >.
-        </p>
-        <p>
-          Check out
-          <a
-            href="https://alextldr.com"
-            target="_blank"
-            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-            >my website</a
-          >.
-        </p>
+    <div class="w-full gap-x-8 justify-items-center grid-cols-2 sm:grid flex flex-col gap-y-6 pt-10">
+      <!-- Alex Profile Section -->
+      <div class="flex items-start gap-4">
+        <!-- Profile Image -->
+        <img
+          src="/static/alex-profile.jpeg"
+          alt="Alex's Profile Picture"
+          class="w-24 h-24 rounded-full object-cover shadow-md"
+        />
+        <!-- Profile Information -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Alex</h2>
+          <p>
+            Reach out on
+            <a
+              href="https://www.linkedin.com/in/alexandru-badragan/"
+              target="_blank"
+              class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+              >LinkedIn</a
+            >.
+          </p>
+          <p>
+            Reach out on
+            <a
+              href="https://gophers.slack.com/team/U033JRER9B7"
+              target="_blank"
+              class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+              >slack</a
+            >.
+          </p>
+          <p>
+            Check out
+            <a
+              href="https://alextldr.com"
+              target="_blank"
+              class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+              >my website</a
+            >.
+          </p>
+        </div>
       </div>
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Jacques</h2>
-        <!-- <h3>Transforming operations and development processes to enhance efficiency and scalability 🚀 DevOps Engineer @ Sopheon</h3> -->
-        <p>
-          Reach out on
-          <a
-            href="https://www.linkedin.com/in/jacques-navarro/"
-            target="_blank"
-            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-            >LinkedIn</a
-          >.
-        </p>
-        <p>
-          Reach out on
-          <a
-            href="https://github.com/jacques-navarro"
-            target="_blank"
-            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-            >GitHub</a
-          >.
-        </p>
-        <!-- <p>
-          Check out
-          <a
-            href="https://alextldr.com"
-            target="_blank"
-            class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-            >my website</a
-          >.
-        </p> -->
+
+      <!-- Jacques Profile Section -->
+      <div class="flex items-start gap-4">
+        <!-- Profile Image -->
+        <img
+          src="/static/jacques-profile.jpeg"
+          alt="Jacques's Profile Picture"
+          class="w-24 h-24 rounded-full object-cover shadow-md"
+        />
+        <!-- Profile Information -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Jacques</h2>
+          <p>
+            Reach out on
+            <a
+              href="https://www.linkedin.com/in/jacques-navarro/"
+              target="_blank"
+              class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+              >LinkedIn</a
+            >.
+          </p>
+          <p>
+            Reach out on
+            <a
+              href="https://github.com/jacques-navarro"
+              target="_blank"
+              class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+              >GitHub</a
+            >.
+          </p>
+        </div>
+      </div>
+    <div class="sm:pt-32 pt-10">
+      <h2 class="text-2xl font-semibold mb-4 sm:pl-3.5">Contact Us</h2>
+      <p class="sm:pl-3.5">
+        Email:
+        <a
+          href="mailto:stuttgart.gophers@protonmail.com"
+          class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
+          >stuttgart.gophers@protonmail.com</a
+        >
+      </p>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-    <p>
-      Email:
-      <a
-        href="mailto:stuttgart.gophers@protonmail.com"
-        class="font-medium dark:text-orange-700 text-orange-700 underline hover:no-underline"
-        >stuttgart.gophers@protonmail.com</a
-      >
-    </p>
   </section>
 </main>
 {{template "footer" .}}
