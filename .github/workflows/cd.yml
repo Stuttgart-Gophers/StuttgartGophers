@@ -50,7 +50,6 @@ jobs:
                   host: 188.245.181.254
                   username: alex
                   key: ${{ secrets.SSH_PRIVATE_KEY }}
-                  passphrase: ${{ secrets.SSH_PASSPHRASE }}
                   debug: true
                   script: |
                       # Login to GitHub Container Registry
