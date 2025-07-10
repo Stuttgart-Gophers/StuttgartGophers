@@ -49,8 +49,7 @@ jobs:
               with:
                   host: 188.245.181.254
                   username: alex
-                  key: ${{ secrets.SSH_PRIVATE_KEY }}
-                  debug: true
+                  password: ${{ secrets.SSH_PASSWORD }}
                   script: |
                       # Login to GitHub Container Registry
                       echo ${{ secrets.GITHUB_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin
