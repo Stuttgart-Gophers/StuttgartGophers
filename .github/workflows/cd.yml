@@ -45,12 +45,13 @@ jobs:
                   labels: ${{ steps.meta.outputs.labels }}
 
             - name: Deploy to Hetzner VM
-              uses: appleboy/ssh-action@v1.0.3
+              uses: appleboy/ssh-action@v1.1.0
               with:
                   host: 188.245.181.254
                   username: alex
                   key: ${{ secrets.SSH_PRIVATE_KEY }}
                   passphrase: ${{ secrets.SSH_PASSPHRASE }}
+                  debug: true
                   script: |
                       # Login to GitHub Container Registry
                       echo ${{ secrets.GITHUB_TOKEN }} | docker login ${{ env.REGISTRY }} -u ${{ github.actor }} --password-stdin
