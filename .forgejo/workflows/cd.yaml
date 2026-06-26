@@ -24,8 +24,15 @@ jobs:
             ${{ github.workspace }}
 
       - name: Login to Forgejo registry
+        env:
+          DEPLOYMENT_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
         run: |
-          docker login ${{ env.REGISTRY }} -u AlexTLDR -p "${{ secrets.DEPLOYMENT_TOKEN }}"
+          set -euo pipefail
+          if [ -z "${DEPLOYMENT_TOKEN:-}" ]; then
+            echo "ERROR: secrets.DEPLOYMENT_TOKEN is empty or not available to this repository." >&2
+            exit 1
+          fi
+          echo "${DEPLOYMENT_TOKEN}" | docker login "${REGISTRY}" -u AlexTLDR --password-stdin
 
       - name: Build and push
         run: |
